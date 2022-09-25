@@ -58,7 +58,7 @@ function gameEngine(){
             highscoreval = score;
             localStorage.setItem("highscore", JSON.stringify(highscoreval));
             highscoreBox.innerHTML = "HighScore: " + highscoreval;
-            speed=speed+speed;
+//             speed=speed+speed;
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
@@ -148,38 +148,3 @@ window.addEventListener('keydown', e =>{
 
 });
 
-
-
-
-// function SummonSnake() {
-
-//     snake.x = 200;
-//     snake.y = 200;
-//     snake.cells = [];
-//     snake.maxCells = 4;
-//     snake.dx = grid;
-//     snake.dy = 0;
-//   }
-
-
-
-
-// function GameMode() {
-//     value = document.getElementById('valueGames').value;
-//     if (value === "E") {
-//       speed = 15;
-//       score = 0;
-//       document.getElementById("Score").innerHTML = score;
-//       SummonSnake();
-//     } else if (value === "M") {
-//       speed = 10;
-//       score = 0;
-//       document.getElementById("score").innerHTML = score;
-//       SummonSnake();
-//     } else if (value === "H") {
-//       speed = 5;
-//       score = 0;
-//       document.getElementById("score").innerHTML = score;
-//       SummonSnake();
-//     }
-//   }
